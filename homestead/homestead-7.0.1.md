@@ -10,7 +10,7 @@
     - box: v5.0.1
 
 ### 详细步骤
-
+---
 #### 新建metadata.json
 ```json
 {
@@ -58,7 +58,48 @@ Vagrantfile
 #### 在工作目录下运行 `vagrant up`
 ![success](./success.png)
 
-#### 配置文件
+### 远程访问
+---
+#### 初始化的信息
+1. 端口映射
+    - SSH: 2222 → 发送到 22
+    - HTTP: 8000 → 发送到 80
+    - HTTPS: 44300 → 发送到 443
+    - MySQL: 33060 → 发送到 3306
+    - Postgres: 54320 → 发送到 5432
+    - Mailhog: 8025 → 发送到 8025
+
+2. 主机信息
+    - ip：192.168.10.10
+    - ssh登录用户名: vagrant
+    - ssh登录密码: vagrant
+
+#### 远程连接mysql
+
+> 使用的是mysql客户端：navicat
+
+1. 新建mysql的连接
+2. 切换tab到ssh，填写ssh的信息。
+
+    **ip：192.168.10.10** <br>
+    **用户名：vagrant** <br/>
+    **密码：vagrant** <br/>
+
+![ssh config](./mysql-connection1.png)  
+
+3. 配置mysql
+
+    **ip：127.0.0.1** <br/>
+    **port：3306** <br/>
+    **用户名：homestead** <br/>
+    **密码：secret** <br/>
+    
+![mysql config](./mysql-connection2.png) 
+
+
+
+### 配置文件
+---
 ```yaml
 ip: 192.168.10.10
 memory: 2048
