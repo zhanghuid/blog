@@ -1,12 +1,15 @@
-## laravel homestead 7.0.1
+## laravel homestead 
 ### 环境说明
 ---
 - 演示的工作目录位置：`F:\vrun\projects`
 - 如果已存在`.ssh `目录请跳过，没有则执行 `ssh-keygen`
+- 版本:
+    - homestead: v7.0.1
+    - Vagrant:  2.0.1
+    - virtualBox: 5.1.30
+    - box: v5.0.1
 
 ### 详细步骤
----
-#### 安装`Vagrant 2.0.1`, `virtualBox 5.1.30`
 
 #### 新建metadata.json
 ```json
