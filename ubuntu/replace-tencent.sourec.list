@@ -1,0 +1,18 @@
+1. 复制备份原来的配置文件
+`sudo cp /etc/apt/sources.list sources.list.bak`
+
+2. 打开sources.list文件，把原来的内容替换成以下内容:
+```
+deb http://mirrors.cloud.tencent.com/ubuntu/ xenial main restricted universe multiverse
+deb http://mirrors.cloud.tencent.com/ubuntu/ xenial-security main restricted universe multiverse
+deb http://mirrors.cloud.tencent.com/ubuntu/ xenial-updates main restricted universe multiverse
+#deb http://mirrors.cloud.tencent.com/ubuntu/ xenial-proposed main restricted universe multiverse
+#deb http://mirrors.cloud.tencent.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb-src http://mirrors.cloud.tencent.com/ubuntu/ xenial main restricted universe multiverse
+deb-src http://mirrors.cloud.tencent.com/ubuntu/ xenial-security main restricted universe multiverse
+deb-src http://mirrors.cloud.tencent.com/ubuntu/ xenial-updates main restricted universe multiverse
+#deb-src http://mirrors.cloud.tencent.com/ubuntu/ xenial-proposed main restricted universe multiverse
+#deb-src http://mirrors.cloud.tencent.com/ubuntu/ xenial-backports main restricted universe multiverse
+```
+
+3. 执行命令 `sudo apt-get update`
