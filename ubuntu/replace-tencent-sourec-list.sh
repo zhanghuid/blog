@@ -20,6 +20,5 @@ else
     echo '已经是腾讯的了\n'
 fi
 
-sudo apt update
-sudo apt upgrade -y
-sudo apt autoremove
+apt-get clean all
+apt-get update
