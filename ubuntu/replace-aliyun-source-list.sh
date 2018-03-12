@@ -20,6 +20,5 @@ else
     echo '已经是阿里的了\n' ##已经是阿里的了
 fi
 
-sudo apt update
-sudo apt upgrade -y
-sudo apt autoremove
+apt-get clean all
+apt-get update
